@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     font-family: system-ui, sans-serif;
     font-size: 1.25rem;
@@ -16,3 +17,8 @@ html {
     font-family: sans-serif;
     text-align: center;
   }
+=======
+body {
+    background: #eceff1;
+}
+>>>>>>> dev
