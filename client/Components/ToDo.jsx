@@ -47,6 +47,7 @@ const ToDo = () => {
 
 
   const handleClick = (value) => {
+    setCountry(value);
     const arr = allCountriesObj.filter((element) => {
       return element.name === value;
     })
