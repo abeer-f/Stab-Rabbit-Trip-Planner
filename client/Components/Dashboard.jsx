@@ -72,12 +72,10 @@ const Dashboard = () => {
 
   return (
     <>
-      <div>
+      <div className="container-dashboard">
         <h3>Dashboard</h3>
         <h4>From</h4>
         <label>Country</label>
-        <br />
-        <button onClick={() => handleFetch()}>Search</button>
         <select
           className="dashDropdown"
           onChange={(e) => setCountryFrom(e.target.value)}
@@ -90,6 +88,7 @@ const Dashboard = () => {
           <option>--Select--</option>
           {cityFromOptionList}
         </select>
+        <button className="btn-search btn" onClick={() => handleFetch()}>Search</button>
         <h4>Destination</h4>
         <select
           className="dashDropdown"
@@ -107,12 +106,7 @@ const Dashboard = () => {
         </select>
         <hr />
 
-        <label>Departure Date</label>
-        <input
-          value={departureDate}
-          onChange={(e) => setDepartureDate(e.target.value)}
-          type="text"
-        />
+
 
         <label>Departure Location Code</label>
         <select
@@ -144,6 +138,14 @@ const Dashboard = () => {
           <option>CDG</option>
           <option>ORY</option>
         </select>
+        <div>
+          <label>Departure Date</label>
+          <input
+            value={departureDate}
+            onChange={(e) => setDepartureDate(e.target.value)}
+            type="text"
+          />
+        </div>
 
         <table>
           <tr>

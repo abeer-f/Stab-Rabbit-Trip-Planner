@@ -2,18 +2,18 @@ html {
     font-family: system-ui, sans-serif;
     font-size: 1.25rem;
   }
-  
+
   body {
     margin: 0;
   }
-  
+
   svg {
     display: inline-block;
     vertical-align: middle;
   }
-  
+
   .App {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
   }
 .tool-tip{
@@ -49,8 +49,19 @@ font-size:xx-small;
     display: block;
   }
 
+td {
+  margin: 10px;
+}
+
+.container-dashboard {
+  display:block;
+  margin: 0 auto;
+
+}
+
 .dashDropdown {
   width: 300px;
+  margin: 25px;
 }
 
 table {
@@ -67,11 +78,53 @@ select {
   border-radius: 15px;
   color: white;
   font-weight: bold;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(120, 120, 120);
   cursor: pointer;
 }
 
 select:hover {
   background-color: rgb(53, 53, 53);
   /* transition: 0.3s; */
+}
+
+label {
+  margin-left: 20px;
+
+}
+
+input {
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.btn-search, button:hover {
+  color: rgb(109, 109, 109);
+  border-color: currentColor;
+  background-color: white;
+}
+
+.btn-search, button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin-left: 20px;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 2px transparent;
+  border-radius: 0.4em;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: #ffffff;
+  background-color: rgb(109, 109, 109);
+}
+
+
+
+h1, h3, h4 {
+  margin-left: 20px;
 }
